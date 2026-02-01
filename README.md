@@ -3,7 +3,7 @@
 ## Overview
 This repository documents a hands-on SOC (Security Operations Center) home lab focused on detecting, analyzing, and documenting common attack behaviors using endpoint and network telemetry.
 
-The goal of this lab is to practice thinking and working like an entry-level SOC analyst by simulating attacks and validating detections with real evidence.
+The purpose of this lab is to practice thinking and working like an entry-level SOC analyst by simulating attacks and validating detections with real evidence.
 
 ---
 
