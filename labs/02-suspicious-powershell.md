@@ -19,6 +19,8 @@ A PowerShell process was run with ExecutionPolicy Bypass and a Base64-encoded co
 - Command-Line Flags:
   - -ExecutionPolicy Bypass
   - -EncodedCommand
+- Integrity Level: Medium
+- User Context: Desktop user
 
 ## Analysis 
 Encoded PowerShell execution with policy bypass is a common method attackers use to avoid detection and run harmful scripts. 
