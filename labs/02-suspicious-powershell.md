@@ -12,7 +12,6 @@ This lab simulates suspicious PowerShell execution and documents how to detect i
 A PowerShell process was run with ExecutionPolicy Bypass and a Base64-encoded command. 
 
 ## Evidence 
-## Evidence
 - Process: powershell.exe
 - Parent Process: explorer.exe
 - Sysmon Event ID: 1
@@ -20,17 +19,19 @@ A PowerShell process was run with ExecutionPolicy Bypass and a Base64-encoded co
   - -ExecutionPolicy Bypass
   - -EncodedCommand
 - Integrity Level: Medium
-- User Context: Desktop user
+- User Context: DESKTOP-H6GAOCK\jdoe
+
+This Sysmon event shows that PowerShell was run with a policy bypass and an encoded payload. This suggests it was likely disguised to avoid command-line inspection.
 
 ![Sysmon Event ID 1 – Encoded PowerShell Execution](../images/sysmon_eventid1_encoded_powershell.png)
 
 
 ## Analysis 
-Encoded PowerShell execution with policy bypass is a common method attackers use to avoid detection and run harmful scripts. 
+Encoded PowerShell execution with policy bypass is a common method that attackers use to avoid detection and run harmful scripts. 
 
 ## MITRE ATT&CK Mapping 
 - TA0002 – Execution
 - T1059.001 – PowerShell
 
 ## Conclusion 
-This activity was identified as a true positive for suspicious PowerShell execution. Recommended actions include isolating the host and reviewing other PowerShell activities.
+This Sysmon event shows that PowerShell was run with a policy bypass and an encoded payload. This suggests it was likely disguised to avoid command-line inspection.
