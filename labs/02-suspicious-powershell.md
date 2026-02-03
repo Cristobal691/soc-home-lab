@@ -22,6 +22,11 @@ A PowerShell process was run with ExecutionPolicy Bypass and a Base64-encoded co
 - Integrity Level: Medium
 - User Context: Desktop user
 
+### Evidence
+
+![Sysmon Event ID 1 – Encoded PowerShell Execution](../images/sysmon_eventid1_encoded_powershell.png)
+
+
 ## Analysis 
 Encoded PowerShell execution with policy bypass is a common method attackers use to avoid detection and run harmful scripts. 
 
