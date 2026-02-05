@@ -29,7 +29,7 @@ The purpose of this lab is to practice thinking and working like an entry-level 
 | Lab | Description |
 |----|------------|
 | 01 | Port Scan Detection using Wireshark and Sysmon |
-| 02 | (Planned) Suspicious PowerShell Execution |
+| 02 | Suspicious PowerShell Execution |
 | 03 | (Planned) Brute-force Authentication Detection |
 
 ---
