@@ -21,7 +21,7 @@ Wireshark captured many TCP SYN packets coming from the Kali VM. These packets t
 - PCAP File:  
   [`port_scan_kali_to_windows.pcapng`](../pcaps/port_scan_kali_to_windows.pcapng)
 
-  =### How to Reproduce
+  ### How to Reproduce
 1. Open the PCAP in Wireshark
 2. Apply filter: `tcp.flags.syn == 1 && tcp.flags.ack == 0`
 3. Observe multiple SYN packets targeting sequential ports
