@@ -1,3 +1,6 @@
+
+⚠️ This repository is actively updated as new labs are completed.
+
 # SOC Home Lab, Detection & Analysis 
 
 ## Overview 
