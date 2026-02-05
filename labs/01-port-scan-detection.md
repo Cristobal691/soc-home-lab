@@ -18,7 +18,6 @@ Wireshark captured many TCP SYN packets coming from the Kali VM. These packets t
 - Destination IP: 10.0.2.15
 - TCP Flags: SYN
 - Ports Targeted: 135, 445, 3306, 995, 554, etc.
-pcaps/port_scan_kali_to_windows.pcapng
 
 ## Analysis 
 The traffic pattern matches typical TCP SYN port scanning behavior often seen during the reconnaissance phase of an attack. 
