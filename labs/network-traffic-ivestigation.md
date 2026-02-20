@@ -1,6 +1,6 @@
 # Network Traffic Investigation Report
 
-Platform: TryHAckMe
+Platform: TryHackMe
 
 Environment: VM + Provided PCAP 
 
