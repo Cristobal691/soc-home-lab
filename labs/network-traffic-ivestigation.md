@@ -14,6 +14,7 @@ Network traffic analysis revealed reconnaissance activity from [Source IP] targe
 ---
 
 ## TCP Connect Scan 
+
 **Filter Used:** 
 '''
 [tcp filter here]
@@ -26,6 +27,7 @@ Network traffic analysis revealed reconnaissance activity from [Source IP] targe
 - High frequency connections
 
 **Assessment:**
+
 Behavior consistent with TCP connect scan (-st)
 
 
@@ -34,16 +36,19 @@ Behavior consistent with TCP connect scan (-st)
 ### TCP SYN Scan 
 
 **Filter Used** 
+
 '''
 tcp.flags.syn == 1 && tcp.flags.ack == 0
 '''
 
 **Observed Behavior** 
+
 - SYN packets sent to multiple ports
 - No handshake completion
 - Rapid port enumeration
 
 **Assessment** 
+
 Behavior consisitent with TCP SYN (half-open) scan (-sS)
 
 ---
