@@ -18,7 +18,9 @@ Network traffic analysis revealed reconnaissance activity from [Source IP] targe
 '''
 [tcp filter here]
 '''
+
 **Observed Behavior**
+
 - Full TCP three-way handshake completed
 - Sequential destination ports
 - High frequency connections
