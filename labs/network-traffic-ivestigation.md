@@ -1,33 +1,23 @@
-# Incident Summary 
+# Multiple Nmap Scan Techniques Detection - Network Traffic Analysis 
 
-Multiple Nmap scans were conducted.
+## Summary 
 
-# Alert Details 
+Network traffic analysis revealed reconnaissance activity from [Source IP] targeting [Target IP]. Multiple Nmap scanning tehniques were identified during the investigation.
 
-Multiple handshake processes were conducted.
+---
 
-# Investigation Steps
-FIlters used:
-tcp.flags.syn==1 and tcp.flags.ack==0 and tcp.window_size > 1024
-tcp.port == 80
-icmp.type==3 and icmp==3
-udp.port in {55..70}
+## Invetigation 
 
-# Evidence
+**Tool Used**
+-Wireshark 
 
+---
 
-
-# Findings
-
-# Conclusion 
-
-# Recommendations 
-
-
-
-
-
-
+## TCP Connect Scan 
+**Filter Used** 
+'''
+[tcp filter here]
+'''
 
 
 
