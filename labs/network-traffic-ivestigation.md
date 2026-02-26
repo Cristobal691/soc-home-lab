@@ -16,9 +16,9 @@ Network traffic analysis revealed reconnaissance activity from [Source IP] targe
 ## TCP Connect Scan 
 
 **Filter Used:** 
-'''
+```
 [tcp filter here]
-'''
+```
 
 **Observed Behavior**
 
@@ -36,10 +36,9 @@ Behavior consistent with TCP connect scan (-st)
 ### TCP SYN Scan 
 
 **Filter Used** 
-
-'''
+```
 tcp.flags.syn == 1 && tcp.flags.ack == 0
-'''
+```
 
 **Observed Behavior** 
 
