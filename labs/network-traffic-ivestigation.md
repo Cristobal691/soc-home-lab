@@ -37,7 +37,7 @@ Behavior consistent with TCP connect scan (-st)
 
 **Filter Used** 
 ```
-tcp.flags.syn == 1 && tcp.flags.ack == 0
+tcp.flags.syn==1 and tcp.flags.ack==0 and tcp.window_size <= 1024
 ```
 
 **Observed Behavior** 
@@ -56,13 +56,14 @@ Behavior consisitent with TCP SYN (half-open) scan (-sS)
 
 **Filter Scan
 ```
-udp
+udp 
 ```
 **Observed Behavior**
 
 - UDP packets sent to multiple destinations
 - ICMP "Port Unreachable" responses observed
-- No handshake behavior (UDP is connectionless
+- No handshake behavior (UDP is connectionless)
+- Port 68 is open because there was no ICMP Destination Unreachable.
 
 **Assessment:**
 
