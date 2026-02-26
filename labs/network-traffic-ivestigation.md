@@ -1,4 +1,4 @@
-# Multiple Nmap Scan Techniques Detection - Network Traffic Analysis 
+ Multiple Nmap Scan Techniques Detection - Network Traffic Analysis 
 
 ## Summary 
 
@@ -52,6 +52,39 @@ tcp.flags.syn == 1 && tcp.flags.ack == 0
 Behavior consisitent with TCP SYN (half-open) scan (-sS)
 
 ---
+
+### UDP Scan 
+
+**Filter Scan
+```
+udp
+```
+**Observed Behavior**
+
+- UDP packets sent to multiple destinations
+- ICMP "Port Unreachable" responses observed
+- No handshake behavior (UDP is connectionless
+
+**Assessment:**
+
+---
+
+## Conclusion 
+
+Confirmed multiple reconnaissance techniques from [source IP] targeting [Target IP]. 
+Activity indicats automated port enumeration using Nmap.
+
+Recommend monitoring or blocking the source if activity persists.
+
+
+
+
+
+
+
+
+
+
 
 
 
