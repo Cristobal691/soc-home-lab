@@ -2,7 +2,7 @@
 
 ## Summary 
 
-Network traffic analysis revealed reconnaissance activity from [Source IP] targeting [Target IP]. Multiple Nmap scanning tehniques were identified during the investigation.
+Network traffic analysis revealed reconnaissance activity from 10.10.60.7 targeting 10.10.47.123. Multiple Nmap scanning tehniques were identified during the investigation.
 
 ---
 
@@ -17,7 +17,7 @@ Network traffic analysis revealed reconnaissance activity from [Source IP] targe
 
 **Filter Used:** 
 ```
-[tcp filter here]
+tcp.flags.syn==1 and tcp.flags.ack==0 and tcp.window_size > 1024
 ```
 
 **Observed Behavior**
@@ -70,7 +70,7 @@ udp
 
 ## Conclusion 
 
-Confirmed multiple reconnaissance techniques from [source IP] targeting [Target IP]. 
+Confirmed multiple reconnaissance techniques from 10.10.60.7 targeting 10.10.47.123. 
 Activity indicats automated port enumeration using Nmap.
 
 Recommend monitoring or blocking the source if activity persists.
