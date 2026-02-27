@@ -63,7 +63,7 @@ udp
 - UDP packets sent to multiple destinations
 - ICMP "Port Unreachable" responses observed
 - No handshake behavior (UDP is connectionless)
-- Port 68 is open because there was no ICMP Destination Unreachable.
+- Port 68 likely open or filtered based on lack of ICMP error response.
 
 **Assessment:**
 
