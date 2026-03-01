@@ -8,8 +8,9 @@ A man-in-the-middle attack was conducted, sniffing multiple usernames and passwo
 
 ## Investigation
 
-**Tool Used:**
-- Wireshark
+Tool Used: Wireshark
+Protocols Analyzed: APR (Adress Resolution Protocol) 
+Filters Applied(
 
 ---
 
