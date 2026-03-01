@@ -1,8 +1,13 @@
-# ARP Poisoning/Spoofing (A.K.A.)
+
+# SOC Investigation Report
+ 
+ Case: APR Spoofing Detection
+
+ Tool: Wireshark
 
 ## Summary 
 
-
+Analyzed network activity in Wireshark to identify abnormal APR activity. The invstigation focused on identifying potential APR spoofing or Man-in-the-Middle behaviour within the network.
 
 ---
 
