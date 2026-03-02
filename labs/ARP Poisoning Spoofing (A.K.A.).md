@@ -40,6 +40,6 @@ http and frame contains "pass"
 ---
 ## Assessment 
 
-The bahaviour indicates a likely ARP spoofing attempt. A malicious host appears to be sending forged ARP replies to associate its MAC address with multiple IP addresses on the network.
+The bahaviour indicates a likely ARP spoofing attempt. A malicious host appears to be sending forged ARP replies to associate its MAC address with multiple IP addresses on the network. The attacker aattempts to iimpersonate legitimate devices on the network. This technique is commonly used in Man-in-the-Middle attacks to intercept or manipulate network traffic. 
 
 ## Conclusion 
