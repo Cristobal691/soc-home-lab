@@ -30,7 +30,16 @@ http and frame contains "pass"
 
 ---
 
+## Observed Behavior
 
+- Multiple ARP request were conducted from the same MAC address.
+- The same MAC adress claimed ownership of multiple IP adresses.
+- Wireshark generated duplicate IP address detection warnings.
+- A high numeber of ARP replies were observed in a short time frame.
 
 ---
+## Assessment 
+
+The bahaviour indicates a likely ARP spoofing attempt. A malicious host appears to be sending forged ARP replies to associate its MAC address with multiple IP addresses on the network.
+
 ## Conclusion 
