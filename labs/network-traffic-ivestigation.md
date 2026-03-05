@@ -93,7 +93,7 @@ Recommend monitoring or blocking the source if activity persists.
 
 ### TCP Connect Scan Evidence
 
-<img width="825" height="518" alt="image" src="https://github.com/user-attachments/assets/fe390478-67e1-43fb-9c76-ac379c040f2b" />
+<img width="600" height="518" alt="image" src="https://github.com/user-attachments/assets/fe390478-67e1-43fb-9c76-ac379c040f2b" />
 
 
 ### TCP SYN Scan Evidence
