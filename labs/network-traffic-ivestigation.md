@@ -22,9 +22,10 @@ tcp.flags.syn==1 and tcp.flags.ack==0 and tcp.window_size > 1024
 
 **Observed Behavior**
 
-- Full TCP three-way handshake completed
-- Sequential destination ports
-- High frequency connections
+- SYN packets sent to multiple ports
+- SYN-ACK responses observed from some ports
+- RST responses observed from closed ports
+
 
 **Assessment:**
 
@@ -37,7 +38,7 @@ Behavior consistent with TCP connect scan (-st)
 
 **Filter Used** 
 ```
-tcp.flags.syn==1 and tcp.flags.ack==0 and tcp.window_size <= 1024
+tcp.flags.syn == 1 && tcp.flags.ack == 0
 ```
 
 **Observed Behavior** 
@@ -77,18 +78,25 @@ Activity indicats automated port enumeration using Nmap.
 Recommend monitoring or blocking the source if activity persists.
 
 
-# Evidence
+## Recommended Mitigation 
 
-TCP Scan
+- Implement IDS/IPS rules to detect port scanning activity
+- Rate limit connection attempts from suspicious hosts
+- Monitor the source IP for further reconnaissance attempts
+
+
+## Evidence
+
+### TCP Connect Scan Evidence
 
 <img width="825" height="518" alt="image" src="https://github.com/user-attachments/assets/fe390478-67e1-43fb-9c76-ac379c040f2b" />
 
 
-SYN Scan
+### TCP SYN Scan Evidence
 
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/70212ca3-2252-4857-bac0-8b4e6dbf2fc1" />
 
-UDP Scan
+### UDP Scan Evidence
 
 <img width="600" height="838" alt="image" src="https://github.com/user-attachments/assets/d2b2fc97-3819-474a-a9c4-58199b3a5eb0" />
 
