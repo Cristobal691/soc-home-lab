@@ -78,12 +78,16 @@ Activity indicats automated port enumeration using Nmap.
 Recommend monitoring or blocking the source if activity persists.
 
 
+---
+
 ## Recommended Mitigation 
 
 - Implement IDS/IPS rules to detect port scanning activity
 - Rate limit connection attempts from suspicious hosts
 - Monitor the source IP for further reconnaissance attempts
 
+
+---
 
 ## Evidence
 
