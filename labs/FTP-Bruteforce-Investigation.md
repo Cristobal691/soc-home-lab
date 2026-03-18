@@ -69,6 +69,9 @@ Screenshot showing muiltiple failed authentication responses.
 
 (Insert screenshot here.)
 
+![Screenshot_20260318_124219_Edge](https://github.com/user-attachments/assets/cadb2fae-a9ea-4a23-9005-c6f7361927d6)
+
+
 ---
 
 **File Upload**
