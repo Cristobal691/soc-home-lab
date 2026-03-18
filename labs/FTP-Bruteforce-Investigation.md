@@ -8,15 +8,14 @@ involving FTP authentication attempts and file transfers.
 The analysis revealed a brute-force login attack against an FTP account, followed by a successful login and file upload. 
  ---
 
-### Environment 
-
-## Environment
+## Environment 
 
 | Tool | Purpose |
 |-----|--------|
 | Wireshark | Network traffic analysis |
 | TryHackMe Lab | Packet capture source |
 
+---
 
 ### Investigation Process
 
@@ -32,7 +31,10 @@ ftp.request.command
 ```
 These filters helped isolate FTP authentication attempts and commands executed by the attacker.
 
+---
+
 ## Findings
+
 
 | Indicator | Value |
 |-----------|-------|
@@ -42,5 +44,76 @@ These filters helped isolate FTP authentication attempts and commands executed b
 | Permission Change Command | CHMOD 777 |
 
 
+---
+
+## Attack Timeline
+
+1. Multiple failed FTP login attempts observed.
+2. Attack successfully authenticated to the FTP account.
+3. A file named **resume.doc** was uploaded.
+4. The attacker attempted to modify file permissions usiing.
+
+```
+CHMOD 777
+```
+This command gives full read, write, and execute persmissions to all users.
+
+---
+
+## Evidence 
+
+**FTP Brute Force Attempts**
+
+Screenshot showing muiltiple failed authentication responses.
+
+(Insert screenshot here.)
+
+---
+
+**File Upload**
+
+Evidence showing file upload command:
+
+```
+STOR resume.doc
+```
+
+(screenshot here)
+
+**Permission Modification**
+
+Evidence showing command:
+
+```
+CHMOD 777
+```
+
+(screenshot here)
+
+---
+
+## Security Assessment 
+
+This activity indicates a successful brute-force attack followed by file upload and permission modification.
+Attackers may use this technique to upload malicious scripts or establish persistence.
+
+FTP transmits cridentials and commands in cleartext, making it insecure for production environments.
+
+---
+
+## Mitigation Recommendations 
+
+- Replace FTP with SFTP or FTPS
+- Enforce strong password policies
+- Implement account lockout after multiple failed attempts
+- Monitor authntication logs
+- Deploy IDS rules to detect brute-force activity
+
+---
+
+## Conclusion
+
+Analysis of the network traffic identified a brute-force attack against an FTP server, resulting in unauthorized file upload and 
+attempted permission modification. This highlights the risks of using cleartext protocols such as FTP.
 
 
