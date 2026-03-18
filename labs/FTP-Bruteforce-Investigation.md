@@ -18,3 +18,28 @@ TryHackMe Lab    Packet capure source
 
 
 ### Investigation Process
+
+The packet capture was analyzed using Wireshark filters to identify FTP activity.
+
+Example filters used:
+
+```
+ftp
+```
+```
+ftp.request.command
+```
+These filters helped isolate FTP authentication attempts and commands executed by the attacker.
+
+## Findings
+
+| Indicator | Value |
+|-----------|-------|
+| Failed Login Attempts | 737 |
+| File Uploaded | resume.doc |
+| File Size | 39,424 bytes |
+| Permission Change Command | CHMOD 777 |
+
+
+
+
