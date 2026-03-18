@@ -79,8 +79,9 @@ Evidence showing file upload command:
 ```
 STOR resume.doc
 ```
+![Screenshot_20260318_124928_Edge](https://github.com/user-attachments/assets/8ba5d469-0b62-4f75-babf-4a080f36eba0)
 
-(screenshot here)
+
 
 **Permission Modification**
 
