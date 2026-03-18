@@ -1,6 +1,6 @@
 # Wireshark Investigation: FTP Brute Force and File Upload
 --- 
-### Overview 
+## Overview 
 
 This investigation analyzes network traffic captured in a packet capture (PCAP) file using Wireshark. The objective was to identify suspicous activity
 involving FTP authentication attempts and file transfers.
@@ -18,7 +18,7 @@ The analysis revealed a brute-force login attack against an FTP account, followe
 
 ---
 
-### Investigation Process
+## Investigation Process
 
 The packet capture was analyzed using Wireshark filters to identify FTP activity.
 
