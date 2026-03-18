@@ -10,11 +10,12 @@ The analysis revealed a brute-force login attack against an FTP account, followe
 
 ### Environment 
 
-Tool             Purpose
+## Environment
 
-Wireshark        Network Traffic Analysis 
-
-TryHackMe Lab    Packet capure source 
+| Tool | Purpose |
+|-----|--------|
+| Wireshark | Network traffic analysis |
+| TryHackMe Lab | Packet capture source |
 
 
 ### Investigation Process
