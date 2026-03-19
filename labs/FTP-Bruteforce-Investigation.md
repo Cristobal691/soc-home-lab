@@ -22,14 +22,26 @@ The analysis revealed a brute-force login attack against an FTP account, followe
 
 The packet capture was analyzed using Wireshark filters to identify FTP activity.
 
-Example filters used:
-
+Filters used:
 ```
 ftp
 ```
 ```
+ftp.response.code == 530
+```
+```
+ftp.response.code == 230
+```
+```
+ftp.request.command == "STOR"
+```
+```
 ftp.request.command
 ```
+```
+ftp contains "CHMOD"
+```
+
 These filters helped isolate FTP authentication attempts and commands executed by the attacker.
 
 ---
