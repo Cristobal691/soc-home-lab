@@ -111,7 +111,7 @@ Evidence showing command:
 CHMOD 777
 ```
 
-<img width="1000" height="1000" alt="image" src="https://github.com/user-attachments/assets/57ef4396-a059-4892-8b47-b3bfe1bb9060" />
+<img width="1200" height="1200" alt="image" src="https://github.com/user-attachments/assets/57ef4396-a059-4892-8b47-b3bfe1bb9060" />
 
 
 ---
