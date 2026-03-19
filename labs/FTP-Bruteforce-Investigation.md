@@ -73,6 +73,13 @@ This command gives full read, write, and execute persmissions to all users.
 
 ---
 
+## Network Details
+
+Attacker IP: 10.231.125.254  
+Target FTP Server: 10.121.70.151
+
+---
+
 ## Evidence 
 
 **FTP Brute Force Attempts**
@@ -81,6 +88,7 @@ Screenshot showing muiltiple failed authentication responses.
 
 ![Screenshot_20260318_124219_Edge](https://github.com/user-attachments/assets/cadb2fae-a9ea-4a23-9005-c6f7361927d6)
 
+Total failed attempts: 737
 
 ---
 
